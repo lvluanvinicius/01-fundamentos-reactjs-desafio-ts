@@ -1,0 +1,100 @@
+.taskcard {
+    border-radius: 8px;
+    background: var(--gray-500);
+    color: var(--gray-100);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.taskcard+.taskcard {
+    margin-top: 1rem;
+}
+
+.taskcard .check {
+    padding: 0 1rem 0 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.taskcard .check input[type="checkbox"] {
+    /* display: none; */
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50% !important;
+}
+
+.taskcard .check input[type="checkbox"]:checked {
+    background-color: var(--purple-dark) !important;
+}
+
+.taskcard .check label {
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.taskcard .check label span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+
+.checklist .checkdisplay {
+    border: 3px solid var(--dark-300);
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checklist .checkdisplay span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+}
+
+.description {
+    text-align: left;
+    font-size: .87rem;
+}
+
+.descriptionCompleted {
+    text-align: left;
+    font-size: .87rem;
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.action {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 0 1rem;
+}
+
+.action button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.action svg {
+    color: var(--gray-300)
+}
